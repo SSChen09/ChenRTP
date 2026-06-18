@@ -1,0 +1,25 @@
+name: ChenRTP
+version: ${version}
+main: su.luochen.chenrtp.ChenRTP
+api-version: '1.21'
+description: 一个简单易用的随机传送插件
+author: Luochen
+website: https://github.com/ChenRTP
+
+commands:
+  rtp:
+    description: 随机传送
+    usage: /rtp
+    permission: chenrtp.use
+  rtpreload:
+    description: 重载 ChenRTP 配置
+    usage: /rtpreload
+    permission: chenrtp.admin
+
+permissions:
+  chenrtp.use:
+    description: 允许使用随机传送
+    default: true
+  chenrtp.admin:
+    description: 允许重载配置
+    default: op
